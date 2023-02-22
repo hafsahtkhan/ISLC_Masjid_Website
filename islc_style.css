@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+
+html{
+    background-color:#0c5c12;
+}
+
+nav a{
+    font-family: Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40%;
+}
+
+.sub-nav-item{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.bodySite {
+    background-color: white;
+}
+
+
+body > footer p {
+    color: white;
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+#donateBox {
+    width: 30%;
+    height: 100%;
+    color: #59c362cd;
+    border: 1px solid #59c362cd ;
+    background-color: #59c36270;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10%;
+}
+
+.donateButton{
+	width:300px;
+	height:100px;
+	border:none;
+	color:white;
+	background-color:rgb(4, 86, 32);
+	border-radius:10px;
+	/*box-shadow:inset 0 0 0 0 #abdbe3;*/
+	transition:ease-out 0.3s;
+	font-size:1.5rem;
+	outline:none;
+}
+.donateButton:hover{
+	box-shadow:inset 300px 0 0 0 #ffffff;
+    color: #000;
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+header img {
+    width: 10%;
+}
+  
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #fff;
+    color: #0c5c12;
+    padding: 0 10px 0 10px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+.navBar a {
+    color: #0c5c12;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 80px;
+  }
+ 
+.navBar-nav {
+    display: flex;
+  }
+
+
+.nav-item {
+    list-style: none;
+  }
+
+.sub-nav-item {
+    list-style: none;
+    height: 40px;
+}
+
+
+.menu1:hover .hidden {
+    display:flex;
+    background-color: #d6d6d6;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    padding-top: 10px;
+}
+
+.menu2:hover .hidden {
+    display:flex;
+    background-color: #d6d6d6;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    padding-top: 10px;
+}
+
+
+.hidden {
+    display:none;
+}
+
+#Prayer h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#Prayer {
+    display:flex;
+    flex-direction: column;
+    padding-left: 8%;
+    margin-top: 4%;
+}
+
+body > footer {
+    width: 100%;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+  }
+
+.bodySite {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+
+#donateBox {
+  display: flex;
+  margin-left: 10%;
+}
