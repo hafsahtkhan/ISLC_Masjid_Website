@@ -95,10 +95,11 @@ body > footer {
   margin-top: 20px;
 }
 .bodyMain {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: flex;
     flex-direction: row;
     height: 700px;
+    overflow-x: hidden;
 }
 
 #donateBox {
@@ -187,3 +188,22 @@ body > footer {
   margin-top: 8%;
   margin-bottom: 8%;
 }
+
+.simple-gallery{
+  width: 100%;
+  border: black 5px solid;
+}
+.simple-gallery--preview{
+  width:60%;
+  height: 100%;
+  float: left;
+  border: #0c5c12 5px solid;
+}
+.simple-gallery--thumbs{
+  width: 33%;
+  height: 50%;
+  float: left;
+  border: #5c0c0c 5px solid;
+}
+
+

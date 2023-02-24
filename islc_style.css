@@ -20,6 +20,7 @@ nav a{
 
 .bodyMain {
     background-color: white;
+    border: 0.5px grey solid;
 }
 
 h3 {
