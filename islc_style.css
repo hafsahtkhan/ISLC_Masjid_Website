@@ -18,8 +18,16 @@ nav a{
     text-decoration-color: black;
 }
 
-.bodySite {
+.bodyMain {
     background-color: white;
+}
+
+h3 {
+    font-family:Poppins;
+    color: #0c5c12;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -34,7 +42,7 @@ body > footer p {
   }
 
 #donateBox {
-    width: 30%;
+    width: 33%;
     height: 100%;
     color: #59c362cd;
     border: 1px solid #59c362cd ;
@@ -61,4 +69,25 @@ body > footer p {
 .donateButton:hover{
 	box-shadow:inset 300px 0 0 0 #ffffff;
     color: #000;
+}
+
+table, td, th {
+    border: 1px black solid;
+}
+
+td, th {
+    padding: 1%;
+}
+
+th {
+    background-color: #303642;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.time {
+    text-align: center;
 }
