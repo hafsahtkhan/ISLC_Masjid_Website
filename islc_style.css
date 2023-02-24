@@ -92,3 +92,52 @@ table {
 .time {
     text-align: center;
 }
+
+.simple-gallery--thumbs .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    z-index: 1;
+}
+
+.simple-gallery--preview .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    z-index: 1;
+}
+
+.simple-gallery--preview:hover .overlay {
+    opacity: 0.3;
+    background-color: black;
+}
+
+.simple-gallery--thumbs:hover .overlay {
+    opacity: 0.25;
+    background-color: black;
+}
+
+.Bigwords {
+    font-family: Poppins;
+    color: white;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.Smallwords {
+    font-family: Poppins;
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+

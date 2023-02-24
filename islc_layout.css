@@ -191,19 +191,50 @@ body > footer {
 
 .simple-gallery{
   width: 100%;
-  border: black 5px solid;
+  overflow: hidden;
 }
 .simple-gallery--preview{
-  width:60%;
+  width:67%;
   height: 100%;
   float: left;
-  border: #0c5c12 5px solid;
+  border: 1px black solid;
+  position: relative;
 }
+
 .simple-gallery--thumbs{
   width: 33%;
   height: 50%;
   float: left;
-  border: #5c0c0c 5px solid;
+  border: 1px black solid;
+  position: relative;
+}
+
+.simple-gallery--preview img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -10;
+}
+
+.simple-gallery--thumbs img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -10;
+}
+
+.Bigwords {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Smallwords {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
