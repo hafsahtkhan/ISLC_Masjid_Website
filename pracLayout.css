@@ -1,10 +1,5 @@
-/*
-        Author: Hafsah Khan
-        Purpose: Design for possible website for Islamic Society
-        of Lake Charles
-        Last Updated: 2.26.23
-*/
 @charset "utf-8";
+
 
 /*
 Navigation Bar
@@ -29,6 +24,9 @@ Navigation Bar
   display: flex;
 }
 
+.sub-nav-item {
+  height: 40px;
+}
 
 .hidden {
   display:none;
