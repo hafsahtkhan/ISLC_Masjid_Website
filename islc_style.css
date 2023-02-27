@@ -104,7 +104,7 @@ table {
     text-align: center;
 }
 
-body > footer p {
+footer p {
     color: white;
     font-family: Poppins;
     font-size: 1em;
@@ -112,7 +112,8 @@ body > footer p {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-  }
+}
+
 
   
 /* Body - Donate section 1/3*/
