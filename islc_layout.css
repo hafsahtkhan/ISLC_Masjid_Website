@@ -16,7 +16,7 @@ Navigation Bar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  /*height: 90px;*/
   padding: 0 10px 0 10px;
   position: relative;
   top: 0;
@@ -30,7 +30,6 @@ Navigation Bar
 .navBar-nav {
   display: flex;
 }
-
 
 .hidden {
   display:none;
@@ -51,6 +50,84 @@ Navigation Bar
 .dropdown:hover .hidden {
   display: block;
 }
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80px;
+  height: 60px;
+}
+
+.toggle-button .bar {
+  height: 10px;
+  width: 100%;
+  background-color: #0c5c12;
+  border-radius: 10px;
+}
+
+
+@media only screen 
+  and (max-device-width: 400px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .toggle-button {
+      display: flex;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .navBar {
+      /*height: 130px;*/
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-links {
+      display: flex;
+      width: 100%;
+    }
+
+    header img {
+      width: 20%;
+      padding-bottom: 5%;
+      position: relative;
+      top: 2rem;
+    }
+
+    .navBar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .navBar-nav li {
+      padding: 2rem;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .navBar a{
+      font-size: 50px;
+    }
+
+    .navbar-links.active {
+      display: flex;
+    }
+
+    .hidden {
+      display: none;
+      flex-direction: column;
+      animation: none;
+      box-shadow: none;
+      background-color: white;
+    }
+
+  }
 
 /*
 Body
@@ -95,6 +172,8 @@ body > footer {
   bottom: 0;
   /*height: fit-content;*/
 }
+
+
 
 @media screen and (max-width: 600px) {
   .column {

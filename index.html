@@ -27,19 +27,24 @@
                 <img src="islcLogo.jpg" alt="Islamic Society of Lake Charles" />
     
                 <nav>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
                     <ul class = "navBar-nav">
                         <li class = "nav-item"><a class="underline" href="index.html">Home</a></li>
                         <li class = "nav-item" >
                             <div class = "dropdown">
                                 <a class = "dropmenu">About Us <i class="fa fa-caret-down"></i></a>
                                 <div class = "hidden">
-                                <a href="imam.html">Imam</a>
+                                <a href="#">Imam</a>
                                 <a href="gallery.html">Gallery</a>
                                 <a href="events.html">Events</a>
                                 </div>
                             </div>
                         </li>
-
                         <li class = "nav-item"><a class="underline" href="school.html">Sunday School</a></li>
                         <li class = "nav-item" >
                             <div class = "dropdown">
@@ -52,6 +57,7 @@
                         <li class = "nav-item"><a class="underline" href="donation.html">Donate</a></li>
                         <li class = "nav-item"><a class="underline" href="contact.html">Contact Us</a></li>
                     </ul>
+                </div>
                 </nav>
             </div>
         </header>
@@ -209,6 +215,15 @@
               }
             }
             </script>
+
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+            toggleButton.addEventListener('click', () => {
+                navbarLinks.classList.toggle('active')
+            })
+        </script>
     </body>
     
 </html>
