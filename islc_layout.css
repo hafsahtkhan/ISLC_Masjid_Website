@@ -12,6 +12,7 @@
 Navigation Bar
 */
 
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -32,7 +33,7 @@ Navigation Bar
 }
 
 .hidden {
-  display:none;
+  display: none;
   position: absolute;
   z-index: 1;
   top: 100%;
@@ -89,7 +90,7 @@ Navigation Bar
     }
 
     .navbar-links {
-      display: flex;
+      display: none;
       width: 100%;
     }
 
@@ -120,13 +121,36 @@ Navigation Bar
     }
 
     .hidden {
-      display: none;
+      display: flex;
       flex-direction: column;
       animation: none;
       box-shadow: none;
       background-color: white;
+      z-index: 0;
     }
 
+    #dropTag1 {
+      padding-bottom: 280px;
+    }
+
+    #dropTag2 {
+      padding-bottom: 140px;
+    }
+
+    #youth {
+      margin-left: 0;
+      padding-top: 30px;
+    }
+
+    /*
+    .subMenu1.active {
+      padding-bottom:250px;
+    }
+
+    .hidden.active {
+      display: flex;
+    }
+*/
   }
 
 /*
@@ -173,13 +197,6 @@ body > footer {
   /*height: fit-content;*/
 }
 
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 /*
 Body Prayer 1/3

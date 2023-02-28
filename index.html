@@ -34,37 +34,37 @@
                     </a>
                     <div class="navbar-links">
                     <ul class = "navBar-nav">
-                        <li class = "nav-item"><a class="underline" href="index.html">Home</a></li>
-                        <li class = "nav-item" >
+                        <li class = "nav-item"><a href="index.html">Home</a></li>
+                        <li class = "nav-item" id="dropTag1">
                             <div class = "dropdown">
-                                <a class = "dropmenu">About Us <i class="fa fa-caret-down"></i></a>
-                                <div class = "hidden">
+                                <a class = "dropmenu" href="#">About Us <i class="fa fa-caret-down"></i></a>
+                                <div class = "hidden" id="firstMenu">
                                 <a href="#">Imam</a>
-                                <a href="gallery.html">Gallery</a>
+                                <a href="gallery.html" >Gallery</a>
                                 <a href="events.html">Events</a>
                                 </div>
                             </div>
                         </li>
-                        <li class = "nav-item"><a class="underline" href="school.html">Sunday School</a></li>
-                        <li class = "nav-item" >
+                        <li class = "nav-item"><a href="school.html">Sunday School</a></li>
+                        <li class = "nav-item" id="dropTag2" >
                             <div class = "dropdown">
                                 <a class = "dropmenu">Programs <i class="fa fa-caret-down"></i></a>
                                 <div class = "hidden" >
-                                <a href="youth.html" >Youth Programs</a>
+                                <a href="youth.html" id="youth" >Youth Programs</a>
                                 </div>
                             </div>
                         </li>
-                        <li class = "nav-item"><a class="underline" href="donation.html">Donate</a></li>
-                        <li class = "nav-item"><a class="underline" href="contact.html">Contact Us</a></li>
+                        <li class = "nav-item"><a href="donation.html">Donate</a></li>
+                        <li class = "nav-item"><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 </nav>
             </div>
         </header>
         <div class = "bodySite">
-        <div class = "bodyMain" style="margin-top: 20px">
+        <div class = "bodyMain" id = "firstBody" style="margin-top: 20px">
             <div class="row">
-                <div class = "column" id = "Prayer">
+                <div class = "column halfCol" id = "Prayer">
                     <h2>Prayer Timings</h2>
                     <div id = "prayerTime">
                         <iframe id="iframe" title="prayerWidget" class="widget-m-top" style="width: 220px; height: 393px; border: 1px solid #ddd;" 
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div  class = "column" id = "donateBox">
+                <div class = "column" id = "donateBox">
                     <div>
                         <button class="donateButton">Masjid Fund Donation</button>
                     </div>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 
-                <div class= "column">
+                <div class= "column halfCol">
                 <!-- Slideshow container -->
                 <h2>Announcements</h2>
                     <div class="slideshow-container">
@@ -224,6 +224,20 @@
                 navbarLinks.classList.toggle('active')
             })
         </script>
+        <!--
+        <script>
+            const aboutUsButton = document.getElementByClass('subMenu1')[0]
+            const submenustuff = document.getElementById('firstMenu')
+
+            aboutUsButton.addEventListener('click', () => {
+                if (submenustuff.style.display === "none") {
+                    submenustuff.style.display = "block";
+                } else {
+                    submenustuff.style.display = "none";
+                }
+                })
+        </script>
+    -->
     </body>
     
 </html>
